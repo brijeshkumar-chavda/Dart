@@ -3,6 +3,7 @@
 // To Skip the optional positional parameter use null when you pass the argument.
 // Use [parameterName] to create a optional positional parameter.
 // Use [parameterName = defaultValue] to give default argument.
+// You need to pass the argument in order same as a parameters are define in the function.
 
 // SYNTAX
 // returnType functionName(type regularParameter,[type optionalPositionalParameter = default value]) {
