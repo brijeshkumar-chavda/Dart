@@ -6,7 +6,7 @@
 // You need to pass the argument in order same as a parameters are define in the function.
 
 // SYNTAX
-// returnType functionName(type regularParameter,[type optionalPositionalParameter = default value]) {
+// returnType functionName(type requiredPositionalParameter,[type optionalPositionalParameter = default value]) {
 //    Code...
 // }
 
