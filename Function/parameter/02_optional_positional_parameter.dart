@@ -1,10 +1,19 @@
 // NOTE
-// 
+// Optional positional parameter comes after the regular parameter.
+// To Skip the optional positional parameter use null when you pass the argument.
+// Use [parameterName] to create a optional positional parameter.
+// Use [parameterName = defaultValue] to give default argument.
 
-void main() {}
+// SYNTAX
+// returnType functionName(type regularParameter,[type optionalPositionalParameter = default value]) {
+//    Code...
+// }
 
-void myFunction(regularParameter, [optionalParameter]) {
-  print(regularParameter);
-  print(optionalParameter);
+// EXAMPLE
+void main() {
+  greeting("Brijesh", null, "Mumbai");
 }
 
+void greeting(String name, [String? surname, String city = "Vadodara"]) {
+  print("Hello! $name $surname from $city");
+}
