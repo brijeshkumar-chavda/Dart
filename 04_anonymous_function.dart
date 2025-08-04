@@ -13,4 +13,10 @@ void main() {
   numbers.forEach((number) {
     print(number);
   });
+
+  // Storing anonymous function in variable.
+  var add = (int a, int b) {
+    return a + b;
+  };
+  print(add(1, 2));
 }
