@@ -1,16 +1,3 @@
-// WHAT
-// A constructor is a special method in a class that is automatically called when an object is created. It initializes the object's properties.
-
-// WHY
-// To set initial values of an object’s properties when it's created.
-// To run setup code automatically upon object creation.
-// To support flexibility via default, named, or factory constructors.
-
-// NOTE
-// Constructors do not return any value explicitly because constructors are special methods meant to initialize an object, not to compute or return values.Dart implicitly returns the instance of the class being created — you don’t write a return type or return statement.
-// Creating multiple constructor with same name will give you error.
-
-// EXAMPLE
 // 1. Default constructor
 class ClassName {
   ClassName() {
