@@ -11,6 +11,3 @@ Q. What is keyword?
 
 Q. What is identifiers?
 - An identifiers is a name that given by programmer to define the variable, function, classes etc.
-
-Q. What if variable is inside a class?
-- Variable inside a class known as a fields, properties
