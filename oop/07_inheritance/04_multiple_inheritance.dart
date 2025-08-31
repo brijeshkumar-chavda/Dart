@@ -1,0 +1,1 @@
+// Dart doesn't support multiple inheritance
