@@ -1,4 +1,4 @@
-// Inheritance
+// Single Inheritance
 
 // What is inheritance?
 // Inheritance is a mechanism that allows a class to inherit properties and methods from another class.
