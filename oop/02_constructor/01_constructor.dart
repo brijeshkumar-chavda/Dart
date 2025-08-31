@@ -1,5 +1,12 @@
 // Constructor
 
+// NOTE
+// The constructor’s name should be the same as the class name.
+// Constructor doesn’t have any return type.
+// Constructor is only called once at the time of the object creation.
+// Constructor is called automatically when an object is created.
+// Constructor is used to initialize the values of the properties of the class.
+
 // 1. Default constructor
 class ClassName {
   ClassName() {
@@ -24,10 +31,14 @@ class ClassName3 {
 }
 
 void main() {
-  ClassName instance1 = new ClassName();
-  ClassName2 instance2 = new ClassName2("variable1", "variable2");
-  ClassName3 instance3 = new ClassName3.constructorName(
+  ClassName objectName1 = new ClassName();
+  ClassName2 objectName2 = new ClassName2("variable1", "variable2");
+  ClassName3 objectName3 = new ClassName3.constructorName(
     "variable1",
     "variable2",
   );
+
+  print(objectName1);
+  print(objectName2);
+  print(objectName3);
 }

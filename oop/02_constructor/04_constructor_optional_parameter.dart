@@ -2,15 +2,10 @@
 
 // WHAT
 // Use square bracket to define the optional parameter in the constructor.
-// You can see default value for the parameter.
 
 // SYNTAX
 class ClassName {
-  ClassName([
-    this.variableName1,
-    this.variableName2,
-    this.variableName3 = "default value",
-  ]);
+  ClassName([this.variableName1, this.variableName2, this.variableName3]);
   String? variableName1;
   String? variableName2;
   String? variableName3;
