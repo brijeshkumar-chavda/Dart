@@ -12,12 +12,5 @@ Q. What is keyword?
 Q. What is identifiers?
 - An identifiers is a name that given by programmer to define the variable, function, classes etc.
 
-
-TODO:
-- How dart compiler work?
-- How flutter work?
-- Why flutter was created?
-- What are the other framework in the market that works just like flutter?
-- Why flutter is the best from the other option available in market?
-- How can flutter able to target multiple platform?
-- How flutter can be update its self to the up to date with the latest android and ios version?
+Q. What if variable is inside a class?
+- Variable inside a class known as a fields, properties

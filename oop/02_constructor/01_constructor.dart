@@ -1,3 +1,5 @@
+// Constructor
+
 // 1. Default constructor
 class ClassName {
   ClassName() {
@@ -13,7 +15,7 @@ class ClassName2 {
   ClassName2(this.variable1, this.variable2);
 }
 
-// 3. Named Constructor;
+// 3. Named Constructor
 class ClassName3 {
   String variable1;
   String variable2;
