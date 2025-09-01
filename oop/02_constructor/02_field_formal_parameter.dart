@@ -1,9 +1,18 @@
-// Field formal parameter
+// Topic: Field formal parameter
 
-// WHAT
-// It is the process where we link the variable declare inside the class to the constructor function's parameters.
+// What is field formal parameter?
+// - A field formal parameter in Dart is a shortcut syntax in a constructor that automatically assigns constructor parameters to class fields (properties).
 
-// SYNTAX
+// Why use field formal parameter?
+// - Reduces boilerplate code.
+// - Makes constructors cleaner and shorter.
+// - Improves readability when you have many fields.
+
+// Note:
+// - Works only in constructors.
+// - Cannot be used in normal methods.
+
+// Syntax:
 
 // OLD WAY: Explicit Constructor
 class ClassName {

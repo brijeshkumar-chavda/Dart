@@ -1,44 +1,50 @@
 // Constructor
 
-// NOTE
-// The constructor’s name should be the same as the class name.
-// Constructor doesn’t have any return type.
-// Constructor is only called once at the time of the object creation.
-// Constructor is called automatically when an object is created.
-// Constructor is used to initialize the values of the properties of the class.
+// What is constructor?
+// - It is a special method in the class which is called when the object is created.
 
-// 1. Default constructor
-class ClassName {
-  ClassName() {
+// Why use constructor?
+// - To set up initial values for class properties.
+// - To control object creation logic.
+// - To make your code cleaner by avoiding manual assignments after object creation.
+
+// Note:
+// - It's name should be the same as the class name.
+// - It doesn’t have any return type.
+// - It is only called once at the time of the object creation.
+// - It is called automatically when an object is created.
+
+// Syntax:
+
+// Default constructor
+class Class1 {
+  Class1() {
     print("I am default constructor");
   }
 }
 
-// 2. Constructor with Parameter
-class ClassName2 {
+// Constructor with Parameter
+class Class2 {
   String variable1;
   String variable2;
 
-  ClassName2(this.variable1, this.variable2);
+  Class2(this.variable1, this.variable2);
 }
 
-// 3. Named Constructor
-class ClassName3 {
+// Named Constructor
+class Class3 {
   String variable1;
   String variable2;
 
-  ClassName3.constructorName(this.variable1, this.variable2);
+  Class3.constructor1(this.variable1, this.variable2);
 }
 
 void main() {
-  ClassName objectName1 = new ClassName();
-  ClassName2 objectName2 = new ClassName2("variable1", "variable2");
-  ClassName3 objectName3 = new ClassName3.constructorName(
-    "variable1",
-    "variable2",
-  );
+  Class1 object1 = new Class1();
+  Class2 object2 = new Class2("value1", "value2");
+  Class3 object3 = new Class3.constructor1("value1", "value2");
 
-  print(objectName1);
-  print(objectName2);
-  print(objectName3);
+  print(object1);
+  print(object2);
+  print(object3);
 }

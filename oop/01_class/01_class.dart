@@ -11,19 +11,19 @@
 
 // EXAMPLE
 class ClassName {
-  String variable1;
-  String variable2;
+  String variableName1;
+  String variableName2;
 
   // Constructor
-  ClassName(this.variable1, this.variable2);
+  ClassName(this.variableName1, this.variableName2);
 
   // Method
-  void myFunction() {
-    print("I'm $variable1 and I'm $variable2");
+  void methodName() {
+    print("I'm $variableName1 and I'm $variableName2");
   }
 }
 
 void main() {
-  ClassName s1 = new ClassName("variable1", "variable2");
-  s1.myFunction();
+  ClassName s1 = new ClassName("value1", "value2");
+  s1.methodName();
 }
