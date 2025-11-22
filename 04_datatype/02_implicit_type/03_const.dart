@@ -1,8 +1,11 @@
+// const keyword
+
+// Note
+// - Must be initialized at the time of declaration
+// - Can't be reassign
+// - Can't be redeclare
+
 void main() {
-  // Declare and initialize at the same time
   const variable = "value";
   print(variable);
-
-  // Can't be reassigned
-  // Can't be redeclared
 }

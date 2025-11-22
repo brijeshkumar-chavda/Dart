@@ -1,8 +1,13 @@
-void main() {
-  // Can be initialized later
-  var variable;
-  variable = "new value"; // Can be reassign it but value should be of same type
-  print(variable);
+// var keyword
 
-  // Can't be redeclare
+// Note
+// - Can be initialized later
+// - Can be reassign (same type value)
+// - Can't be redeclare
+
+void main() {
+  var variable;
+  variable = "value";
+  variable = "new value";
+  print(variable);
 }

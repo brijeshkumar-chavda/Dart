@@ -1,9 +1,12 @@
+// final keyword
+
+// Note
+// - Can be initialize later
+// - Can't be reassign
+// - Can't be redeclare
+
 void main() {
-  // Can be initialized later
   final variable;
   variable = "value";
   print(variable);
-
-  // Can't be reassigned
-  // Can't be redeclared
 }
