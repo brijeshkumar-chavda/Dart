@@ -10,9 +10,9 @@
 
 // Example
 void main() {
-  String myString = "Hello, World!";
-  String substring1 = myString.substring(7); // "World!"
-  String substring2 = myString.substring(0, 5); // "Hello"
+  String myString = "0123456789";
+  String substring1 = myString.substring(7); // "789"
+  String substring2 = myString.substring(0, 5); // "01234"
 
   print("Original String: $myString");
   print("Substring 1: $substring1");
