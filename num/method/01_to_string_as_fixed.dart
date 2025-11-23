@@ -8,7 +8,7 @@
 // variable.toStringAsFixed(precision digit);
 
 // Note
-// - This will return string.
+// - This will return string. So if you want to do any math operator further. You need to convert it number first.
 
 // Example
 void main() {
