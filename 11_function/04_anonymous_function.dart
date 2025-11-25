@@ -1,22 +1,13 @@
-// WHAT
-// A function which doesn't have name.
+// Anonymous Function
 
-// SYNTAX
-// (parameter){
-//  Code...
-// }
+// What
+// - A function which doesn't have name.
 
-// EXAMPLE
+// Example
 void main() {
-  List<int> numbers = [1, 2, 3, 4, 5];
-
-  numbers.forEach((number) {
-    print(number);
-  });
-
   // Storing anonymous function in variable.
-  var add = (int a, int b) {
+  var variable = (int a, int b) {
     return a + b;
   };
-  print(add(1, 2));
+  print(variable(1, 2));
 }
