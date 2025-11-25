@@ -5,7 +5,7 @@
 
 // Example
 void main() {
-  bool condition = true;
+  bool condition = 10 > 0;
   String result = condition ? "Condition is True" : "Condition is False";
   print(result); // Output: Condition is True
 }
