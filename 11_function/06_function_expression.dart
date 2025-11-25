@@ -1,30 +1,20 @@
-// WHAT
-// Expression: An expression is a piece of code that produces a value.
-// Statement: A statement is a piece of code that performs an action.
+// Function Expression
 
-// HOW
-// Function returns a expression. if you try to return statement it won't work.
-// Because of that function can't return the regular function.
-// It can return the anonymous function and reference of the named function.
+// Definitions
+// - Expression: An expression is a piece of code that produces a value.
+// - Statement: A statement is a piece of code that performs an action.
 
+// What
+// - A function expression is a anonymous function that is store inside a variable.
+// - It is also known as a lambda function or closure in other programming languages.
 
-// EXAMPLE
-// Function returning the anonymous function.
-Function myFunction1() {
-  return () {
-    print("I am returned anonymous function");
+// Example
+void main() {
+  // Function expression using regular syntax.
+  var variable1 = (int parameter1, int parameter2) {
+    return parameter1 + parameter2;
   };
-}
 
-// Function returning the regular function.
-Function myFunction2(){
-  // return Function myFunction3(){
-  //   print("I am regular function");
-  // };
-  return myFunction1;
-}
-
-void main(){
-  myFunction1();
-  myFunction2();
+  // Function expression using arrow syntax.
+  var variable2 = (int parameter1, int parameter2) => parameter1 + parameter2;
 }
