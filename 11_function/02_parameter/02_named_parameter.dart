@@ -6,10 +6,14 @@
 
 // Example
 void main() {
-  print(function1("Hello, ", parameter2: "Dart!"));
-  print(function1("Hello, "));
+  print(function1("Hello, ", parameter2: "Dart!", parameter3: "!!!"));
+  print(function1("Hello, ", parameter3: "!!!"));
 }
 
-String function1(String parameter1, {String parameter2 = "Default value"}) {
-  return parameter1 + parameter2;
+String function1(
+  String parameter1, {
+  String parameter2 = "Default value",
+  required String parameter3,
+}) {
+  return parameter1 + parameter2 + parameter3;
 }
