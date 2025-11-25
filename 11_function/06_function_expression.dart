@@ -14,7 +14,9 @@ void main() {
   var variable1 = (int parameter1, int parameter2) {
     return parameter1 + parameter2;
   };
+  print(variable1(1, 2));
 
   // Function expression using arrow syntax.
   var variable2 = (int parameter1, int parameter2) => parameter1 + parameter2;
+  print(variable2(1, 2));
 }
