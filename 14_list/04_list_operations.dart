@@ -7,9 +7,7 @@ void main() {
   // Accessing the element using the index number
   print(list[0]);
 
-  list.add(60);
-  print(list);
-
-  list.remove(10);
+  // Updating the element using the index number
+  list[0] = 1;
   print(list);
 }
