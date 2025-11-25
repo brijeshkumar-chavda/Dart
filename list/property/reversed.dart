@@ -3,6 +3,8 @@
 // What
 // - It is a property of the Iterable class in Dart.
 // - It returns an iterable of the elements in reverse order.
+// - The reverse order you see in the terminal is just a string representation of the list.
+// - The original list remains unchanged.
 
 // Syntax
 // variable.reversed;
