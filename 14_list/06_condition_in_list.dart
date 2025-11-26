@@ -8,7 +8,7 @@
 
 // Example
 void main() {
-  var list = [1, 2, 3, 4, 5, if (false) 6];
+  var list = [1, 2, 3, 4, 5, if (true) 6];
 
   print(list);
 }
