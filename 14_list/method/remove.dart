@@ -4,8 +4,11 @@
 // - It takes one argument as a parameter.
 // - The value of the argument must be the element that you want to remove from the list.
 
+// Note
+// - It will modify the original list.
+
 // Syntax
-// list.remove();
+// list.remove(element);
 
 // Example
 void main() {
