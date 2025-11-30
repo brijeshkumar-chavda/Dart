@@ -1,13 +1,12 @@
 // Getter & Setter method
 
-// What is Getter & Setter method?
-// Getter and setter are methods that are used to access and modify the value of a property.
-// Getter is used to get the value of a property and setter is used to set the value of a property.
+// What
+// - Getter and setter are methods that are used to access and modify the value of a property.
+// - Getter is used to get the value of a property and setter is used to set the value of a property.
 
-// EXAMPLE
-
-class ClassName {
-  String _property = "value";
+// Example
+class Class {
+  String _property = "I am property";
 
   // Getter method
   String getProperty() {
@@ -21,7 +20,7 @@ class ClassName {
 }
 
 void main() {
-  ClassName object = ClassName();
-  object.setProperty("new value");
-  print(object.getProperty());
+  Class instance = Class();
+  instance.setProperty("new value");
+  print(instance.getProperty());
 }

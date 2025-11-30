@@ -1,6 +1,6 @@
 // Getter & Setter keyword
 
-class ClassName {
+class Class {
   String _property = "value";
 
   // String get property {
@@ -17,7 +17,7 @@ class ClassName {
 }
 
 void main() {
-  ClassName object = ClassName();
-  object.property = "new value";
-  print(object.property);
+  Class instance = Class();
+  instance.property = "new value";
+  print(instance.property);
 }
