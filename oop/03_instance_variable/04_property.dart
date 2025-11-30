@@ -1,12 +1,11 @@
 // Property
 
-// WHAT
-// In Dart, “property” usually means either a field or a getter/setter pair that looks like a field from the outside. Flutter docs also call widget fields “properties”.
+// What
+// - A variable which is declare inside the class and access and update by the getter and setter that variable is known as a property.
 
-// SYNTAX
-
-class ClassName1 {
-  String _property = "value";
+// Syntax
+class Class {
+  String _property = "I am property";
 
   // Property: getter
   String get property {
@@ -20,14 +19,13 @@ class ClassName1 {
 }
 
 void main() {
-  ClassName1 object = ClassName1();
-  object.property = "new value";
-  print(object.property);
+  Class instance = Class();
+  instance.property = "new value";
+  print(instance.property);
 }
 
-
 // Getter and setter using the arrow function
-class ClassName2 {
+class Class1 {
   String? _property;
 
   get property => _property;
