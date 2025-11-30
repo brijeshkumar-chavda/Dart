@@ -1,32 +1,37 @@
 // Hierarchical Inheritance
 
-class ParentClass {
-  String parentProperty = "I am parent property";
+class Parent {
+  String parentVariable = "I am parent variable";
   String parentMethod() {
     return "I am parent method";
   }
 }
 
-class ChildClass extends ParentClass {
-  String childProperty = "I am child property";
-  String childMethod() {
-    return "I am child method";
+class Brother extends Parent {
+  String brotherVariable = "I am brother variable";
+  String brotherMethod() {
+    return "I am brother method";
   }
 }
 
-class GrandChildClass extends ChildClass {
-  String grandChildProperty = "I am grand child property";
-  String grandChildMethod() {
-    return "I am grand child method";
+class Sister extends Parent {
+  String sisterVariable = "I am sister variable";
+  String sisterMethod() {
+    return "I am sister method";
   }
 }
 
 void main() {
-  GrandChildClass objectFromGrandChildClass = GrandChildClass();
-  print(objectFromGrandChildClass.grandChildProperty);
-  print(objectFromGrandChildClass.grandChildMethod());
-  print(objectFromGrandChildClass.childProperty);
-  print(objectFromGrandChildClass.childMethod());
-  print(objectFromGrandChildClass.parentProperty);
-  print(objectFromGrandChildClass.parentMethod());
+  Brother brotherInstance = Brother();
+
+  print(brotherInstance.brotherVariable);
+  print(brotherInstance.brotherMethod());
+  print(brotherInstance.parentVariable);
+  print(brotherInstance.parentMethod());
+
+  Sister sisterInstance = Sister();
+  print(sisterInstance.sisterVariable);
+  print(sisterInstance.sisterMethod());
+  print(sisterInstance.parentVariable);
+  print(sisterInstance.parentMethod());
 }

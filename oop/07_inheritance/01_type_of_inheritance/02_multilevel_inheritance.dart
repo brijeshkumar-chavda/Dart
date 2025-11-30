@@ -1,23 +1,23 @@
 // Multilevel inheritance
 
-class GrandParentClass {
-  String grandParentProperty = "Grand Parent Property";
+class GrandParent {
+  String grandParentVariable = "I am grand parent variable";
 
   String grandParentMethod() {
     return "I am grand parent method";
   }
 }
 
-class ParentClass extends GrandParentClass {
-  String parentProperty = "Parent Property";
+class Parent extends GrandParent {
+  String parentVariable = "I am parent variable";
 
   String parentMethod() {
     return "I am parent method";
   }
 }
 
-class ChildClass extends ParentClass {
-  String childProperty = "Child Property";
+class Child extends Parent {
+  String childVariable = "I am child variable";
 
   String childMethod() {
     return "I am child method";
@@ -25,17 +25,17 @@ class ChildClass extends ParentClass {
 }
 
 void main() {
-  ParentClass objectFromParentClass = ParentClass();
-  print(objectFromParentClass.grandParentProperty);
-  print(objectFromParentClass.grandParentMethod());
-  print(objectFromParentClass.parentProperty);
-  print(objectFromParentClass.parentMethod());
+  Parent parentInstance = Parent();
+  print(parentInstance.grandParentVariable);
+  print(parentInstance.grandParentMethod());
+  print(parentInstance.parentVariable);
+  print(parentInstance.parentMethod());
 
-  ChildClass objectFromChildClass = ChildClass();
-  print(objectFromChildClass.grandParentProperty);
-  print(objectFromChildClass.grandParentMethod());
-  print(objectFromChildClass.parentProperty);
-  print(objectFromChildClass.parentMethod());
-  print(objectFromChildClass.childProperty);
-  print(objectFromChildClass.childMethod());
+  Child childInstance = Child();
+  print(childInstance.grandParentVariable);
+  print(childInstance.grandParentMethod());
+  print(childInstance.parentVariable);
+  print(childInstance.parentMethod());
+  print(childInstance.childVariable);
+  print(childInstance.childMethod());
 }
