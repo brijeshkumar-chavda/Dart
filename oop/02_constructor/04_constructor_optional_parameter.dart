@@ -1,19 +1,20 @@
 // Constructor with optional parameter
 
-// WHAT
-// Use square bracket to define the optional parameter in the constructor.
+// What
+// - Use square bracket to define the optional parameter in the constructor.
 
 // SYNTAX
-class ClassName {
-  ClassName([this.variableName1, this.variableName2, this.variableName3]);
-  String? variableName1;
-  String? variableName2;
-  String? variableName3;
+class Class1 {
+  Class1([this.variable1, this.variable2, this.variable3]);
+
+  String? variable1;
+  String? variable2;
+  String? variable3;
 }
 
 void main() {
-  ClassName objectName = new ClassName("value1");
-  print(objectName.variableName1);
-  print(objectName.variableName2);
-  print(objectName.variableName3);
+  Class1 object1 = new Class1("value1");
+  print(object1.variable1);
+  print(object1.variable2);
+  print(object1.variable3);
 }

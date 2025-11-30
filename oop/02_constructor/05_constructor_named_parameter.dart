@@ -1,28 +1,28 @@
 // Constructor with named parameter
 
-class ClassName {
-  ClassName({
-    required this.variableName1,
-    required this.variableName2,
-    required this.variableName3,
+class Class1 {
+  Class1({
+    required this.variable1,
+    required this.variable2,
+    required this.variable3,
   });
 
-  String variableName1;
-  String variableName2;
-  String variableName3;
+  String variable1;
+  String variable2;
+  String variable3;
 
   void method() {
-    print(variableName1);
-    print(variableName2);
-    print(variableName3);
+    print(variable1);
+    print(variable2);
+    print(variable3);
   }
 }
 
 void main() {
-  ClassName objectName = ClassName(
-    variableName1: "value1",
-    variableName2: "value2",
-    variableName3: "value3",
+  Class1 object1 = Class1(
+    variable1: "value1",
+    variable2: "value2",
+    variable3: "value3",
   );
-  objectName.method();
+  object1.method();
 }
