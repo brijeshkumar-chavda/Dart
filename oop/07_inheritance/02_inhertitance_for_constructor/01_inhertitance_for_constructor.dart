@@ -1,21 +1,21 @@
-// Inheritance for constructor
+// Inheritance for constructor function
 
 // How to the inheritance for constructor work?
-// When a class inherits from another class, the constructor of the constructor of the parent class called after than child class constructor called.
+// - When a class inherits from another class, the constructor of the parent class called first then after child class constructor called.
 
-class ParentClassName {
-  ParentClassName() {
+class Parent {
+  Parent() {
     print("Parent Class Constructor");
   }
 }
 
-class ChildClassName extends ParentClassName {
-  ChildClassName() {
+class Child extends Parent {
+  Child() {
     print("Child Class Constructor");
   }
 }
 
 void main() {
-  ChildClassName object = ChildClassName();
-  print(object);
+  Child childInstance = Child();
+  print(childInstance);
 }

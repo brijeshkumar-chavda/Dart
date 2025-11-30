@@ -1,19 +1,19 @@
 // Super with named constructor
 
-class ParentClass {
-  ParentClass.constructorName(this.parentProperty);
-  String parentProperty;
+class Parent {
+  Parent.namedConstructor(this.parentVariable);
+  String parentVariable;
 
   String parentMethod() {
-    return parentProperty;
+    return parentVariable;
   }
 }
 
-class ChildClass extends ParentClass {
-  ChildClass(String parentProperty) : super.constructorName(parentProperty);
+class Child extends Parent {
+  Child(String anyName) : super.namedConstructor(anyName);
 }
 
 void main() {
-  ChildClass object = ChildClass("I am parentProperty");
-  print(object.parentProperty);
+  Child childInstance = Child("I am value for parent variable");
+  print(childInstance.parentVariable);
 }

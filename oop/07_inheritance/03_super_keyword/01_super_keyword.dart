@@ -1,30 +1,30 @@
 // Super keyword
 
-// What is the super keyword?
-// The super keyword is used to refer to the parent class.
-// It is used to access the methods and properties of the parent class.
+// What
+// - The super keyword is used to refer to the parent class.
+// - It is used to access the methods and properties of the parent class.
 
-// SYNTAX
-class ParentClassName {
-  String parentClassVariable = "parent class variable";
+// Syntax
+class Parent {
+  String parentVariable = "I am parent variable";
 
-  void parentClassNameMethod() {
-    print("I am parent class method");
+  void parentMethod() {
+    print("I am parent method");
   }
 }
 
-class ChildClassName extends ParentClassName {
-  String childClassVariable = "child class variable";
+class Child extends Parent {
+  String childVariable = "I am child variable";
 
-  void childClassNameMethod() {
-    super.parentClassVariable;
-    super.parentClassNameMethod();
+  void childMethod() {
+    super.parentVariable;
+    super.parentMethod();
     print("I am child class method");
   }
 }
 
 void main() {
-  ChildClassName objectFromChildClassName = ChildClassName();
-  print(objectFromChildClassName.parentClassVariable);
-  objectFromChildClassName.parentClassNameMethod();
+  Child childInstance = Child();
+  print(childInstance.parentVariable);
+  childInstance.parentMethod();
 }

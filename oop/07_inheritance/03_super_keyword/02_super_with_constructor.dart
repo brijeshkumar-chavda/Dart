@@ -1,20 +1,38 @@
 // Super with constructor
 
-class ParentClass {
-  String parentProperty;
+// How
+// - When your child class extends the parent class.
+// - That parent class has constructor which required a values.
+// - You need to pass the required values to the parent class constructor. When you create an instance of the child class.
 
-  ParentClass(this.parentProperty);
+class Parent {
+  Parent(this.parentVariable);
+
+  String parentVariable;
 
   String parentMethod() {
-    return parentProperty;
+    return parentVariable;
   }
 }
 
-class ChildClass extends ParentClass {
-  ChildClass(String parentProperty) : super(parentProperty);
+// Child constructor:
+// Child(incoming value for parent class constructor)
+// - It will take the value for that parent class constructor.
+// - Make sure that parameter in child class should be same datatype as a parent class constructor required.
+// - Then we are able to pass the value to the parent class constructor.
+
+// Super keyword:
+// : super(value from the child class constructor)
+// - It will take the value from the child constructor.
+// - Pass that value to the parent class constructor.
+// - Basically : super() == Parent() calling same as a parent class constructor.
+
+class Child extends Parent {
+  // Child Constructor() : Parent Constructor()
+  Child(String anyName) : super(anyName);
 }
 
 void main() {
-  ChildClass object = ChildClass("parentProperty");
-  print(object.parentProperty);
+  Child childInstance = Child("I am value for the parent variable");
+  print(childInstance.parentVariable);
 }
