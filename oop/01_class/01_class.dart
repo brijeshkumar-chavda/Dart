@@ -1,29 +1,32 @@
-// WHAT
-// A class in Dart is a blueprint for creating objects. It defines the properties (variables) and behaviors (methods) that an object can have.
+// Class
 
-// WHY
-// To organize code using Object-Oriented Programming (OOP).
-// To reuse code efficiently by instantiating multiple objects.
-// To create custom data types with specific behavior and structure.
+// What
+// - A class in Dart is a blueprint for creating objects. It defines the properties (variables) and behaviors (methods) that an object can have.
 
-// HOW
-// You define a class using the class keyword, followed by its name. Inside the class, you declare fields (variables), constructors, and methods.
+// Why
+// - To organize code using Object-Oriented Programming (OOP).
+// - To reuse code efficiently by instantiating multiple objects.
+// - To create custom data types with specific behavior and structure.
 
-// EXAMPLE
+// How
+// - You define a class using the class keyword, followed by its name. Inside the class, you declare fields (variables), constructors, and methods.
+
+// Example
 class ClassName {
-  String variableName1;
-  String variableName2;
+  // Fields
+  String variable1;
+  String variable2;
 
   // Constructor
-  ClassName(this.variableName1, this.variableName2);
+  ClassName(this.variable1, this.variable2);
 
   // Method
-  void methodName() {
-    print("I'm $variableName1 and I'm $variableName2");
+  void method() {
+    print("I'm $variable1 and I'm $variable2");
   }
 }
 
 void main() {
-  ClassName s1 = new ClassName("value1", "value2");
-  s1.methodName();
+  ClassName instance1 = new ClassName("value1", "value2");
+  instance1.method();
 }

@@ -1,21 +1,20 @@
 // Constructor
 
-// What is constructor?
+// What
 // - It is a special method in the class which is called when the object is created.
 
-// Why use constructor?
-// - To set up initial values for class properties.
+// Why
+// - To set up initial values for class properties(fields).
 // - To control object creation logic.
 // - To make your code cleaner by avoiding manual assignments after object creation.
 
-// Note:
+// Note
 // - It's name should be the same as the class name.
 // - It doesn’t have any return type.
 // - It is only called once at the time of the object creation.
 // - It is called automatically when an object is created.
 
-// Syntax:
-
+// Syntax
 // Default constructor
 class Class1 {
   Class1() {

@@ -22,8 +22,8 @@
 // Abstract class
 abstract class AbstractClass {
   // Abstract constructor
-  AbstractClass(this.variableName) {}
   String variableName;
+  AbstractClass(this.variableName) {}
 
   // Abstract variable
   String get abstractVariableName;
