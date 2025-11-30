@@ -13,7 +13,7 @@ class Class1 {
   });
 
   // Constructor with optional parameter with default value
-  Class1.constructorName([
+  Class1.namedConstructor([
     this.variable1 = "default value1",
     this.variable2 = "default value2",
     this.variable3 = "default value3",
@@ -26,7 +26,7 @@ void main() {
   print(object1.variable2);
   print(object1.variable3);
 
-  Class1 object2 = new Class1.constructorName();
+  Class1 object2 = new Class1.namedConstructor();
   print(object2.variable1);
   print(object2.variable2);
   print(object2.variable3);
