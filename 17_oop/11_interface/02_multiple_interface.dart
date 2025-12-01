@@ -1,14 +1,14 @@
 // Multiple interface
 
-abstract class InterfaceClassName1 {
+abstract class InterfaceClass1 {
   void method1();
 }
 
-abstract class InterfaceClassName2 {
+abstract class InterfaceClass2 {
   void method2();
 }
 
-class ChildClass implements InterfaceClassName1, InterfaceClassName2 {
+class Child implements InterfaceClass1, InterfaceClass2 {
   @override
   void method1() {
     print("I am method from interface class 1");
@@ -21,7 +21,7 @@ class ChildClass implements InterfaceClassName1, InterfaceClassName2 {
 }
 
 void main() {
-  ChildClass objectName = ChildClass();
-  objectName.method1();
-  objectName.method2();
+  Child childInstance = Child();
+  childInstance.method1();
+  childInstance.method2();
 }
