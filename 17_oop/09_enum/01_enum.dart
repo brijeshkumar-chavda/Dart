@@ -1,22 +1,22 @@
 // Enum
 
-// What is enum?
+// What
 // - Enum is a collection of related constants value.
 
-// Note:
+// Note
+// - It is declared outside the class.
 // - It must contain at least one constant value.
-// - Enums are declared outside the class.
 // - Used to store a large number of constant values.
 
-// Syntax:
-enum enumName { constantValue1, constantValue2, constantValue3 }
+// Syntax
+enum EnumName { constantValue1, constantValue2, constantValue3 }
 
 void main() {
   // Accessing all enum values
-  print(enumName.values);
+  print(EnumName.values);
 
   // Accessing individual enum values
-  print(enumName.constantValue1);
-  print(enumName.constantValue2);
-  print(enumName.constantValue3);
+  print(EnumName.constantValue1);
+  print(EnumName.constantValue2);
+  print(EnumName.constantValue3);
 }
