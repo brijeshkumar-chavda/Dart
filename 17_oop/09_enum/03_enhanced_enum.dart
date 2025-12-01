@@ -45,7 +45,7 @@ class Person {
   const Person({required this.name, required this.vehicle});
 
   void method() {
-    print("I am ${name} and I Drive ${vehicle} ");
+    print("I am ${name} and I Drive ${vehicle.brand} ");
   }
 }
 
