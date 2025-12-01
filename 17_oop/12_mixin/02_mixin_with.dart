@@ -15,7 +15,7 @@ mixin Mixin2 {
 class Class1 with Mixin1, Mixin2 {}
 
 void main() {
-  Class1 object = Class1();
-  object.method1();
-  object.method2();
+  Class1 instance = Class1();
+  instance.method1();
+  instance.method2();
 }

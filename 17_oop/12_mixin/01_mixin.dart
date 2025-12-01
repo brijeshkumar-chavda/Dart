@@ -1,9 +1,9 @@
 // Mixin
 
-// WHAT
+// What
 // - Mixins are a way of reusing the code in multiple classes. Mixins are declared using the keyword mixin followed by the mixin name. Three keywords are used while working with mixins: mixin, with, and on. It is possible to use multiple mixins in a class.
 
-// NOTE
+// Note
 // - When using multiple mixins, their order matters. If two mixins have methods with the same name, the method from the last mixin in the with clause "wins" and is used. You can also restrict a mixin to be used only on certain types of classes using the on keyword, as shown in the example above.
 
 // Can't
@@ -12,17 +12,24 @@
 // - Can't extend a mixin.
 
 // Syntax
-mixin Mixin1{
+mixin Mixin1 {
   void method1() {
     print('I am method1 from Mixin1');
   }
 }
 
-class Class1 with Mixin1{}
+mixin Mixin2 {
+  void method2() {
+    print('I am method2 from Mixin2');
+  }
+}
+
+class Class1 with Mixin1, Mixin2 {}
 
 void main() {
-  Class1 object = Class1();
-  object.method1();
+  Class1 childInstance = Class1();
+  childInstance.method1();
+  childInstance.method2();
 }
 
 // Analogy

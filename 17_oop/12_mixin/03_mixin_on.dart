@@ -1,12 +1,12 @@
-abstract class ParentClass {
-  ParentClass(this.variable1);
+abstract class Parent {
+  Parent(this.variable1);
 
   String? variable1;
 
   void method1();
 }
 
-mixin Mixin1 on ParentClass {
+mixin Mixin1 on Parent {
   void method1() {
     print('${variable1} I am method1 from ParentClass');
   }
@@ -16,8 +16,8 @@ mixin Mixin1 on ParentClass {
   }
 }
 
-class ChildClass extends ParentClass with Mixin1 {
-  ChildClass(String? variable1) : super(variable1);
+class Child extends Parent with Mixin1 {
+  Child(String? variable1) : super(variable1);
 
   @override
   void method1() {
@@ -31,7 +31,7 @@ class ChildClass extends ParentClass with Mixin1 {
 }
 
 void main() {
-  ChildClass object = ChildClass('Hello');
-  object.method1();
-  object.method2();
+  Child instance = Child('Hello');
+  instance.method1();
+  instance.method2();
 }
