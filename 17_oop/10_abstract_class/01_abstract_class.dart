@@ -22,35 +22,32 @@
 // Abstract class
 abstract class AbstractClass {
   // Abstract constructor
-  String variableName;
-  AbstractClass(this.variableName) {}
+  String variable1;
+  AbstractClass(this.variable1) {}
 
-  // Abstract variable
-  String get abstractVariableName;
+  String get abstractVariable;
 
-  // Abstract method
-  void abstractMethodName();
+  void abstractMethod();
 
-  // Concert method
-  void ConcertMethodName() {
+  void ConcertMethod() {
     print("I am concert method");
   }
 }
 
-class ChildClass extends AbstractClass {
-  ChildClass(variableName) : super(variableName);
+class Child extends AbstractClass {
+  Child(variableName) : super(variableName);
 
   @override
-  String get abstractVariableName => "I am abstract variable";
+  String get abstractVariable => "I am abstract variable";
 
   @override
-  void abstractMethodName() {
+  void abstractMethod() {
     print("I am abstract method");
   }
 }
 
 void main() {
-  ChildClass objectName = ChildClass("I am variable");
+  Child objectName = Child("I am variable");
   print(objectName);
 }
 
