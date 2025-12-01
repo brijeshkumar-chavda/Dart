@@ -1,27 +1,27 @@
 // Polymorphism
 
-// What is Polymorphism?
+// What
 // - Poly = many, morph = form
 // - Polymorphism is a mechanism that allows a class to have multiple forms.
 // - Polymorphism is also known as method overloading.
 
-// Note:
+// Note
 // - Even if you don't write the @override keyword, Dart will automatically recognize the overridden method.
 
-class GrandParentClass {
+class GrandParent {
   String grandParentMethod() {
     return "I am grand parent method";
   }
 }
 
-class ParentClass extends GrandParentClass {
+class Parent extends GrandParent {
   @override
   String grandParentMethod() {
     return "I am parent method";
   }
 }
 
-class ChildClass extends ParentClass {
+class Child extends Parent {
   @override
   String grandParentMethod() {
     return "I am child method";
@@ -29,6 +29,6 @@ class ChildClass extends ParentClass {
 }
 
 void main() {
-  ChildClass object = ChildClass();
-  print(object.grandParentMethod());
+  Child childInstance = Child();
+  print(childInstance.grandParentMethod());
 }
