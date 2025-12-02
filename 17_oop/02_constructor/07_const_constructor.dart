@@ -1,19 +1,19 @@
 // Const constructor
 
-// NOTE
+// Note
 // All variable of the class should be final.
 
 class ClassName {
-  final String variableName1;
-  final String variableName2;
-  final String variableName3;
+  final String variable1;
+  final String variable2;
+  final String variable3;
 
-  const ClassName(this.variableName1, this.variableName2, this.variableName3);
+  const ClassName(this.variable1, this.variable2, this.variable3);
 }
 
 void main() {
-  ClassName objectName = const ClassName("value1", "value2", "value3");
-  print(objectName.variableName1);
-  print(objectName.variableName2);
-  print(objectName.variableName3);
+  ClassName instance = const ClassName("value1", "value2", "value3");
+  print(instance.variable1);
+  print(instance.variable2);
+  print(instance.variable3);
 }

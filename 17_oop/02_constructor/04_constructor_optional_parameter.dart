@@ -13,8 +13,8 @@ class Class1 {
 }
 
 void main() {
-  Class1 object1 = new Class1("value1");
-  print(object1.variable1);
-  print(object1.variable2);
-  print(object1.variable3);
+  Class1 instance = new Class1("value1");
+  print(instance.variable1);
+  print(instance.variable2);
+  print(instance.variable3);
 }

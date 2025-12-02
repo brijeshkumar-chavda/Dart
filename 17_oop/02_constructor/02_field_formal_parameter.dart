@@ -15,8 +15,8 @@
 // Syntax
 
 // OLD WAY: Explicit Constructor
-class ClassName {
-  ClassName(String parameter1, String parameter2) {
+class Class {
+  Class(String parameter1, String parameter2) {
     // this.class variable = constructor parameter
     this.variable1 = parameter1;
     this.variable2 = parameter2;
@@ -27,8 +27,8 @@ class ClassName {
 }
 
 // NEW WAY: Constructor Shorthand Syntax
-class ClassName1 {
-  ClassName1(this.variable1, this.variable2);
+class Class1 {
+  Class1(this.variable1, this.variable2);
 
   late String variable1;
   late String variable2;

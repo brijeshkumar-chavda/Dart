@@ -19,10 +19,10 @@ class Class1 {
 }
 
 void main() {
-  Class1 object1 = Class1(
+  Class1 instance = Class1(
     variable1: "value1",
     variable2: "value2",
     variable3: "value3",
   );
-  object1.method();
+  instance.method();
 }

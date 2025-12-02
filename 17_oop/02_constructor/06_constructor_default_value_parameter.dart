@@ -21,13 +21,13 @@ class Class1 {
 }
 
 void main() {
-  Class1 object1 = new Class1();
-  print(object1.variable1);
-  print(object1.variable2);
-  print(object1.variable3);
+  Class1 instance1 = new Class1();
+  print(instance1.variable1);
+  print(instance1.variable2);
+  print(instance1.variable3);
 
-  Class1 object2 = new Class1.namedConstructor();
-  print(object2.variable1);
-  print(object2.variable2);
-  print(object2.variable3);
+  Class1 instance2 = new Class1.namedConstructor();
+  print(instance2.variable1);
+  print(instance2.variable2);
+  print(instance2.variable3);
 }

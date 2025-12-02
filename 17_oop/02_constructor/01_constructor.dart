@@ -1,18 +1,18 @@
 // Constructor
 
 // What
-// - It is a special method in the class which is called when the object is created.
+// - It is a special method in the class which is called when the instance is created.
 
 // Why
 // - To set up initial values for class properties(fields).
-// - To control object creation logic.
-// - To make your code cleaner by avoiding manual assignments after object creation.
+// - To control instance creation logic.
+// - To make your code cleaner by avoiding manual assignments after instance creation.
 
 // Note
 // - It's name should be the same as the class name.
 // - It doesn’t have any return type.
-// - It is only called once at the time of the object creation.
-// - It is called automatically when an object is created.
+// - It is only called once at the time of the instance creation.
+// - It is called automatically when an instance is created.
 
 // Syntax
 // Default constructor
@@ -35,15 +35,15 @@ class Class3 {
   String variable1;
   String variable2;
 
-  Class3.constructor1(this.variable1, this.variable2);
+  Class3.namedConstructor(this.variable1, this.variable2);
 }
 
 void main() {
-  Class1 object1 = new Class1();
-  Class2 object2 = new Class2("value1", "value2");
-  Class3 object3 = new Class3.constructor1("value1", "value2");
+  Class1 instance1 = new Class1();
+  Class2 instance2 = new Class2("value1", "value2");
+  Class3 instance3 = new Class3.namedConstructor("value1", "value2");
 
-  print(object1);
-  print(object2);
-  print(object3);
+  print(instance1);
+  print(instance2);
+  print(instance3);
 }
