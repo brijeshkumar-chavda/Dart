@@ -12,13 +12,13 @@
 // - You define a class using the class keyword, followed by its name. Inside the class, you declare fields (variables), constructors, and methods.
 
 // Example
-class ClassName {
+class Class {
   // Fields
   String variable1;
   String variable2;
 
   // Constructor
-  ClassName(this.variable1, this.variable2);
+  Class(this.variable1, this.variable2);
 
   // Method
   void method() {
@@ -27,6 +27,6 @@ class ClassName {
 }
 
 void main() {
-  ClassName instance1 = new ClassName("value1", "value2");
+  Class instance1 = new Class("value1", "value2");
   instance1.method();
 }

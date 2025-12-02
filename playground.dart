@@ -1,4 +1,3 @@
 void main() {
-  final name;
-  print(name);
+  print(this);
 }
